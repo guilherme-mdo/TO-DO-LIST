@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Guilherme Michael">
+  <meta name="description" content="Lista de Tarefas - Desafio técnico com HTML, CSS e JS puro">
+  <title>Lista de tarefas</title>
+  <link rel="shortcut icon" href="assets/lista-de-tarefas.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<!-- 
+    Projeto: Lista de Tarefas
+    Desenvolvido por: Guilherme Michael
+    Data: Agosto 2026
+    Desafio Técnico para Vaga de Estágio
+-->
+
+<body>
+  <!-- Conteúdo -->
+  <main class="app">
+    <section class="card" aria-labelledby="titulo">
+
+      <!-- Titulos -->
+      <header class="cabecalho">
+        <p class="subtitulo">ORGANIZAÇÃO PESSOAL</p>
+        <h1 id="titulo">Minhas tarefas</h1>
+        <p class="descricao">Adicione suas tarefas e acompanhe o que precisa ser feito.</p>
+      </header>
+
+      <!-- Formulário -->
+
+      <form id="formulario-tarefa" class="formulario-tarefa">
+        <label class="rotulo-escondido" for="campo-tarefa">Nova tarefa</label>
+        <input id="campo-tarefa" type="text" placeholder="Digite uma tarefa" required>
+        <button type="submit" class="botao-adicionar">Adicionar</button>
+      </form>
+
+
+      <div class="cabecalho-lista">
+        <h2>Lista de tarefas</h2>
+        <span id="quantidade-tarefas">0 tarefas</span>
+      </div>
+
+      <ul id="lista-tarefas" class="lista-tarefas"></ul>
+
+      <p id="mensagem-vazia" class="mensagem-vazia">Você ainda não adicionou nenhuma tarefa.</p>
+    </section>
+  </main>
+
+  <!-- Modal para editar tarefa -->
+
+  <div id="modal-editar" class="modal-escondido">
+    <div class="modal-conteudo">
+      <h3>Editar Tarefa</h3>
+      <input type="text" id="input-editar">
+      <div class="modal-botoes">
+        <button id="btn-salvar">Salvar</button>
+        <button id="btn-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
