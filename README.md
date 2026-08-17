@@ -1,6 +1,6 @@
 # Lista de Tarefas
 
-Projeto desenvolvido para o desafio técnico de estágio. Aplicação de To-Do List feita com HTML, CSS e JavaScript puro.
+Aplicação de To-Do List feita com HTML, CSS e JavaScript puro.
 
 ![Print do App](./assets/print-to-do-list.png)
 
